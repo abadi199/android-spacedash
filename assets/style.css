@@ -1,0 +1,53 @@
+body {
+	background-color: black;
+	color: #555;
+	text-align: center;
+	font-family: "Droid Sans";
+}
+
+h1 {
+	font-weight: normal;
+	color: #fff;
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 14pt;
+	color: #fff;
+	margin-top: 10px;
+}
+
+h3 {
+	font-size: 12pt;
+	font-weight: normal;
+	color: #ccc;
+}
+
+.credit_table {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: left;
+}
+
+.ratmonkey {
+	color: #888;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.studio {
+	color: #fff;
+	font-weight: bold;
+}

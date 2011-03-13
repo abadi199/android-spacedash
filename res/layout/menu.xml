@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:id="@+id/MainMenu"
+		android:orientation="vertical" android:layout_width="338px"
+		android:layout_marginRight="21px" android:layout_marginBottom="11px"
+		android:background="@drawable/menu_bg" android:gravity="center"
+		android:layout_height="190px" android:layout_gravity="bottom|right">
+		<Button android:id="@+id/MenuResumeGame" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/menu_resume_button"
+			android:layout_gravity="center_vertical|center_horizontal">
+		</Button>
+		<Button android:id="@+id/MenuNewGame" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:background="@drawable/menu_new_button">
+		</Button>
+		<Button android:id="@+id/MenuOptions" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:background="@drawable/menu_options_button">
+		</Button>
+		<Button android:id="@+id/MenuHelp" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:background="@drawable/menu_help_button">
+		</Button>
+		<Button android:id="@+id/MenuCredit" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:background="@drawable/menu_credits_button">
+		</Button>
+		<Button android:id="@+id/MenuExit" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal"
+			android:background="@drawable/menu_exit_button">
+		</Button>
+	</LinearLayout>
+
+	<RelativeLayout android:id="@+id/OptionMenu"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/blackbg" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:visibility="invisible">
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:background="@drawable/overlaymenupatch"
+			android:orientation="vertical" android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true" android:layout_gravity="center"
+			android:layout_marginLeft="20px" android:layout_marginRight="20px"
+			android:layout_marginBottom="40px" android:layout_marginTop="40px"
+			android:paddingBottom="10px" android:paddingLeft="10px"
+			android:paddingRight="10px" android:paddingTop="10px"
+			android:gravity="center">
+			<ToggleButton android:id="@+id/SoundButton"
+				android:layout_gravity="center" android:textOn="" android:textOff=""
+				android:background="@drawable/sound_button">
+			</ToggleButton>
+			<ToggleButton android:id="@+id/MusicButton"
+				android:layout_gravity="center" android:textOn="" android:textOff=""
+				android:background="@drawable/music_button">
+			</ToggleButton>
+			<ToggleButton android:id="@+id/VibrateButton"
+				android:layout_gravity="center" android:textOn="" android:textOff=""
+				android:background="@drawable/vibrate_button">
+			</ToggleButton>
+			<Button android:id="@+id/CalibrateButton"
+				android:layout_gravity="center" android:background="@drawable/calibrate_button">
+			</Button>
+			<Button android:id="@+id/BackButton" android:layout_gravity="center"
+				android:background="@drawable/back_button">
+			</Button>
+		</TableLayout>
+	</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_root" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="10dp" android:layout_gravity="center" style="@style/CustomDialog"
+	android:background="#000">
+	<FrameLayout android:id="@+id/DialogTop"
+		android:layout_height="0dp" android:layout_weight="1"
+		android:layout_width="fill_parent" android:layout_centerHorizontal="true">
+		<WebView android:id="@+id/DialogCredits"
+			android:layout_gravity="top|center_horizontal" android:gravity="top|center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:minHeight="100px" android:visibility="visible" />
+
+		<WebView android:id="@+id/DialogHelp"
+			android:layout_gravity="top|center_horizontal" android:gravity="top|center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:minHeight="100px" android:visibility="visible" />
+
+		<TextView android:id="@+id/DialogText" android:textColor="#FFF"
+			android:text="@string/really_quit" android:padding="10px"
+			android:layout_width="fill_parent" android:visibility="visible"
+			android:layout_gravity="center" android:layout_height="fill_parent"
+			android:gravity="center" />
+	</FrameLayout>
+	<FrameLayout android:id="@+id/DialogBottom"
+		android:minHeight="30px" android:layout_width="fill_parent"
+		android:layout_centerHorizontal="true" android:layout_height="38dp">
+		<LinearLayout android:id="@+id/DialogOkCancel"
+			android:orientation="horizontal" android:layout_gravity="bottom|center_horizontal"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<Button android:id="@+id/ButtonOk" android:background="@drawable/ok_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_margin="10px"></Button>
+			<Button android:id="@+id/ButtonCancel" android:background="@drawable/cancel_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_margin="10px"></Button>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/DialogYesNo"
+			android:orientation="horizontal" android:layout_gravity="bottom|center_horizontal"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<Button android:id="@+id/ButtonYes" android:background="@drawable/yes_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_margin="10px"></Button>
+			<Button android:id="@+id/ButtonNo" android:background="@drawable/no_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_margin="10px"></Button>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/DialogOk"
+			android:orientation="horizontal" android:layout_gravity="bottom|center_horizontal"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<Button android:id="@+id/ButtonOkOnly" android:background="@drawable/ok_button"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_margin="10px"></Button>
+		</LinearLayout>
+	</FrameLayout>
+</LinearLayout>

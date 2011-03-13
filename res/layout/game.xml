@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/GameLayout"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<com.ratmonkey.spacedash.SDView
+		android:id="@+id/SDView" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<RelativeLayout android:id="@+id/InGameMenu"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="@drawable/blackbg" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:visibility="invisible">
+		<TableLayout android:layout_width="wrap_content"
+			android:background="@drawable/overlaymenupatch"
+			android:layout_height="wrap_content" android:orientation="vertical"
+			android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+			android:layout_gravity="center" android:layout_marginLeft="20px"
+			android:layout_marginRight="20px" android:paddingBottom="10px"
+			android:paddingLeft="10px" android:paddingRight="10px"
+			android:paddingTop="10px">
+			<Button android:id="@+id/ResumeGameButton"
+				android:layout_gravity="center" android:background="@drawable/resume_game_button">
+			</Button>
+			<ToggleButton android:id="@+id/SoundButton"
+				android:layout_gravity="center" android:textOn="" android:textOff=""
+				android:background="@drawable/sound_button">
+			</ToggleButton>
+			<ToggleButton android:id="@+id/MusicButton"
+				android:layout_gravity="center" android:textOn="" android:textOff=""
+				android:background="@drawable/music_button">
+			</ToggleButton>
+			<ToggleButton android:id="@+id/VibrateButton"
+				android:layout_gravity="center" android:textOn="" android:textOff=""
+				android:background="@drawable/vibrate_button">
+			</ToggleButton>
+			<Button android:id="@+id/CalibrateButton"
+				android:layout_gravity="center" android:background="@drawable/calibrate_button">
+			</Button>
+			<Button android:id="@+id/EndGameButton"
+				android:layout_gravity="center" android:background="@drawable/end_game_button">
+			</Button>
+		</TableLayout>
+	</RelativeLayout>
+	<FrameLayout android:id="@+id/LoadProgressScreen"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:background="#0000" android:visibility="visible">
+		<ImageView android:id="@+id/ImageProgressScreen"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:src="@drawable/screenshot1" android:layout_gravity="top|center_horizontal"/>
+		<ProgressBar android:id="@+id/LoadProgressBar"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:background="#0000" android:indeterminateOnly="false"
+			android:progressDrawable="@android:drawable/progress_horizontal"
+			android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal"
+			android:minHeight="28dip" android:maxHeight="28dip" android:padding="10px"
+			android:progress="10" android:layout_gravity="bottom" />
+	</FrameLayout>
+</FrameLayout>
